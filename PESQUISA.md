@@ -15,13 +15,12 @@ Como o app Expo do nosso TCC pode fotografar a folha de soja com expo-image-pick
 | @tanstack/react-query | Cache, nova tentativa, estado da requisição | Não agora: há um único endpoint. |
 
 ## Fontes oficiais lidas
-- [título da página] ([endereço])
+- [Expo ImagePicker — SDK 58](https://docs.expo.dev/versions/v58.0.0/sdk/imagepicker/): confirma que o módulo funciona no Expo Go, suporta Android/iOS e oferece `launchCameraAsync`, `launchImageLibraryAsync` e solicitações de permissão.
+- [Expo SDK 58 — referência](https://docs.expo.dev/versions/v58.0.0/): versão da documentação usada para conferir a API compatível com o projeto.
 
 ## Onde a IA errou
-- Pedido:
-- O que veio:
-- Como percebi:
-- O certo:
+- Nenhum erro de implementação da IA foi registrado até o momento. O lint automático do SDK 58 instalou ESLint 9, mas o comando `expo lint` não conseguiu executá-lo; a validação equivalente foi feita com `eslint .`.
 
 ## Resultado e próximos passos no TCC
-- [preencher no Encontro 2]
+- A PoC demonstra o fluxo móvel de captura/seleção, envio multipart para uma API simulada, espera, resultado e tratamento de falhas. O próximo passo do TCC é substituir a URL pelo classificador real e comparar os modelos fora do aplicativo.
+- Ainda falta validar os critérios em aparelho físico ou emulador e registrar o resultado em `CRITERIOS.md`.

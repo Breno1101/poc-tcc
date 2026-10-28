@@ -6,6 +6,16 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Permita que o aplicativo acesse a câmera para fotografar a folha de soja.",
+          "microphonePermission": false,
+          "photosPermission": "Permita que o aplicativo acesse suas fotos para selecionar uma folha de soja."
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
