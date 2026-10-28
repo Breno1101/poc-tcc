@@ -12,7 +12,7 @@ import {
   View,
 } from 'react-native';
 
-const API_URL = 'http://192.168.15.27:3000/diagnostico';
+const API_URL = 'http://SEU_IP:3000/diagnostico';
 const REQUEST_TIMEOUT_MS = 10_000;
 
 type Diagnosis = {
